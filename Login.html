@@ -9,14 +9,15 @@
 <body class="background-login">
     <div class="login-container">
         <h1>Iniciar sesión</h1>
-        <input type="text" id="user" placeholder="Email" required>
+        <input type="text" id="user" placeholder="Email o número de celular" required>
         <input type="password" id="password" placeholder="Contraseña" required>
         <button onclick="InicioDeSesion()">Iniciar sesión</button>
+        <div id="error-msg" class="error"></div>
         <div class="additional-options">
             <label><input type="checkbox"> Recuérdame</label>
             <a href="#">¿Olvidaste la contraseña?</a>
         </div>
-        <p>¿Primera vez en Ri0nflix? <a href="#">Suscríbete ahora.</a></p>
+        <p>¿Primera vez en Netflix? <a href="#">Suscríbete ahora.</a></p>
     </div>
     <script src="codigo.js"></script>
 </body>

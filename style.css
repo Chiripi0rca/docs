@@ -265,7 +265,7 @@ input[type="password"] {
 }
 
 /* Botón de iniciar sesión */
-button {
+.login-container button {
     width: 100%;
     padding: 12px;
     background-color: #e50914; /* Color rojo de Netflix */
@@ -278,7 +278,7 @@ button {
     margin-top: 20px;
 }
 
-button:hover {
+.login-container button:hover {
     background-color: #f6121d; /* Cambio de color al pasar el cursor */
 }
 
