@@ -3,15 +3,24 @@
     margin: 0; /* Elimina el margen por defecto */
     height: 200vh; /* Altura completa de la ventana */
 }
-.background-login{
+.background-login {
+    position: relative;
     background-color: #050505;
-    background-size: cover;
-    background-position: center;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
-    margin: 0;
+    overflow: hidden; /* Para evitar cualquier desplazamiento adicional */
+}
+.background-login::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 /*Configurar estilo del header y del boton para iniciar sesion*/
 header {
@@ -393,6 +402,12 @@ input[type="password"] {
         padding: 10px; /* Ajusta el tamaño del padding para inputs y botón */
         font-size: 14px; /* Reduce un poco el tamaño de fuente */
     }
+    /* Fondo para pantallas de móviles */
+    @media (max-width: 480px) {
+    .background-login {
+        background-color: #555555;
+    }
+}
 
     /* Opciones adicionales */
     .additional-options {
