@@ -13,15 +13,6 @@
     align-items: center;
     overflow: hidden; /* Para evitar cualquier desplazamiento adicional */
 }
-.background-login::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
 /*Configurar estilo del header y del boton para iniciar sesion*/
 header {
     display: flex;
@@ -402,13 +393,6 @@ input[type="password"] {
         padding: 10px; /* Ajusta el tamaño del padding para inputs y botón */
         font-size: 14px; /* Reduce un poco el tamaño de fuente */
     }
-    /* Fondo para pantallas de móviles */
-    @media (max-width: 480px) {
-    .background-login {
-        background-color: #555555;
-    }
-}
-
     /* Opciones adicionales */
     .additional-options {
         flex-direction: column; /* Coloca el checkbox y el enlace uno debajo del otro */
