@@ -2,6 +2,10 @@
 function RedigirInicioDeSesion(){
     window.location.href ="Login.html";
 }
+//funcion para cuando le piquen al titulo ri0nflix los regrese a la pagian inicial
+function RedigirPaginaInicial(){
+  window.locaation.href ="index.html";
+}
 //Funcion para Iniciar sesion
   //declaramos variables
      const User = "ri0npl4y";
@@ -20,6 +24,17 @@ function RedigirInicioDeSesion(){
         errorMsg.textContent = "Nombre de usuario o contraseña incorrectos.";
       }
      }
+
+     document.addEventListener("DOMContentLoaded", () => {
+      if (window.location.hash === "#email") {
+          const emailInput = document.getElementById("email-input");
+          if (emailInput) {
+              emailInput.scrollIntoView({ behavior: "smooth", block: "center" });
+              emailInput.focus(); // Coloca el cursor en el campo de correo
+          }
+      }
+  });
+
       //bloque para las preguntas frecuentes
       document.querySelectorAll('.faq-question').forEach((button) => {
         button.addEventListener('click', () => {
