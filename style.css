@@ -354,4 +354,29 @@ button:hover {
         flex-direction: column; /* Mantiene la disposición en columnas */
         margin: 5px; /* Reduce el margen entre elementos */
     }
+     /* Ajusta el contenedor de login */
+     .login-container {
+        width: 90%; /* Haz que el contenedor ocupe más espacio horizontal */
+        padding: 20px; /* Reduce el padding para adaptarse a pantallas pequeñas */
+    }
+
+    /* Ajuste del título */
+    .login-container h1 {
+        font-size: 20px; /* Reduce el tamaño del título */
+    }
+
+    /* Tamaño de los inputs y botón */
+    input[type="text"],
+    input[type="password"],
+    button {
+        padding: 10px; /* Ajusta el tamaño del padding para inputs y botón */
+        font-size: 14px; /* Reduce un poco el tamaño de fuente */
+    }
+
+    /* Opciones adicionales */
+    .additional-options {
+        flex-direction: column; /* Coloca el checkbox y el enlace uno debajo del otro */
+        align-items: flex-start;
+        gap: 10px; /* Añade un poco de espacio entre elementos */
+    }
 }
