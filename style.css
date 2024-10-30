@@ -255,8 +255,10 @@ input[type="email"] {
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
     text-align: center;
-    width: 300px;
-    color: rgb(0, 0, 0);
+    width: 90%; /* Ajuste para pantallas pequeñas */
+    max-width: 300px; /* Limita el tamaño en pantallas grandes */
+    color: white;
+    margin: 0 auto; /* Centra horizontalmente */
 }
 
 /* Título */
@@ -400,4 +402,9 @@ input[type="password"] {
         align-items: flex-start;
         gap: 10px; /* Añade un poco de espacio entre elementos */
     }
+}
+    @media (max-width: 480px) {
+     .login-container {
+        padding: 20px; /* Reduce el padding para pantallas pequeñas */
+     }
 }
