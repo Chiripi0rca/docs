@@ -3,15 +3,15 @@
     margin: 0; /* Elimina el margen por defecto */
     height: 200vh; /* Altura completa de la ventana */
 }
-.background-login {
-    position: relative;
+.background-login{
     background-color: #050505;
-    width: 100vw;
-    height: 100vh;
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* Para evitar cualquier desplazamiento adicional */
+    height: 100vh;
+    margin: 0;
 }
 /*Configurar estilo del header y del boton para iniciar sesion*/
 header {
@@ -393,6 +393,7 @@ input[type="password"] {
         padding: 10px; /* Ajusta el tamaño del padding para inputs y botón */
         font-size: 14px; /* Reduce un poco el tamaño de fuente */
     }
+
     /* Opciones adicionales */
     .additional-options {
         flex-direction: column; /* Coloca el checkbox y el enlace uno debajo del otro */
